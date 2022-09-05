@@ -31,7 +31,7 @@ SDRANCHARTCID-V1.3.0			?= origin/rel-1.3
 SDRANCHARTCID-V1.4.0			?= sd-ran-1.4.2
 
 #  Helm arguments
-DEFAULT_HELM_ARGS				:= --set import.ran-simulator.enabled=true --set import.onos-pci.enabled=true
+DEFAULT_HELM_ARGS				:= --set import.ran-simulator.enabled=false --set import.onos-pci.enabled=true
 HELM_ARGS						?= $(DEFAULT_HELM_ARGS)
 HELM_ARGS_RANSIM				?= --set import.ran-simulator.enabled=true --set import.onos-pci.enabled=true
 HELM_ARGS_OAI					?= --set import.onos-rsm.enabled=true
