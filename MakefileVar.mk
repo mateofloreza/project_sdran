@@ -34,7 +34,7 @@ SDRANCHARTCID-V1.4.0			?= sd-ran-1.4.2
 DEFAULT_HELM_ARGS				:= --set import.ran-simulator.enabled=false --set import.onos-pci.enabled=true
 HELM_ARGS						?= $(DEFAULT_HELM_ARGS)
 HELM_ARGS_RANSIM				?= --set import.ran-simulator.enabled=true --set import.onos-pci.enabled=true
-HELM_ARGS_OAI					?= --set import.onos-rsm.enabled=true
+HELM_ARGS_OAI					?= --set import.onos-rsm.enabled=false
 HELM_ARGS_RIC					?= --set import.onos-pci.enabled=false --set import.onos-rsm.enabled=true
 HELM_ARGS_RIC_E2AP101			?= --set import.onos-pci.enabled=false --set import.onos-rsm.enabled=true
 HELM_ARGS_FBAH					?= --set import.fb-ah-xapp.enabled=true --set import.fb-ah-gui.enabled=true --set import.ah-eson-test-server.enabled=true --set import.ran-simulator.enabled=true --set import.fb-kpimon-xapp.enabled=true
